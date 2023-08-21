@@ -1,0 +1,25 @@
+.line-structure {
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 10px 12vw;
+  font-family: var(--font2);
+}
+.Section-structure {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding: 10px 12vw;
+  justify-content: center;
+}
+.lower-structure {
+  /* height: 30%; */
+  padding: 10px 12vw;
+  /* padding: 20px 45px; */
+  align-items: center;
+  justify-content: center;
+}
+
+
+

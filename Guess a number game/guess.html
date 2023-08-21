@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>find hidden number</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <ul class="rightHeader">
+            <li>Home</li>
+            <li>My Account</li>
+          </ul>
+        </div>
+        <div id="navLogo"></div>
+        <div class="logIn" align="left">Log out</div>
+      </nav>
+    </header>
+    <main>
+      <div class="mainContainer">
+        <div class="result">
+          <div id="logical">Find hidden number</div>
+          <div id="alert"></div>
+          <div id="remaining">you have 5 chances</div>
+        </div>
+
+        <div class="line"></div>
+        <div class="array">
+          <div class="tenItem">
+            <div>
+              <button value="01" class="arrayItem" onclick="pushz(this)">
+                01
+              </button>
+            </div>
+            <div>
+              <button value="02" class="arrayItem" onclick="pushz(this)">
+                02
+              </button>
+            </div>
+            <div>
+              <button value="03" class="arrayItem" onclick="pushz(this)">
+                03
+              </button>
+            </div>
+            <div>
+              <button value="04" class="arrayItem" onclick="pushz(this)">
+                04
+              </button>
+            </div>
+            <div>
+              <button value="05" class="arrayItem" onclick="pushz(this)">
+                05
+              </button>
+            </div>
+            <div>
+              <button value="06" class="arrayItem" onclick="pushz(this)">
+                06
+              </button>
+            </div>
+            <div>
+              <button value="07" class="arrayItem" onclick="pushz(this)">
+                07
+              </button>
+            </div>
+            <div>
+              <button value="08" class="arrayItem" onclick="pushz(this)">
+                08
+              </button>
+            </div>
+            <div>
+              <button value="09" class="arrayItem" onclick="pushz(this)">
+                09
+              </button>
+            </div>
+            <div>
+              <button value="10" class="arrayItem" onclick="pushz(this)">
+                10
+              </button>
+            </div>
+            <div>
+              <button value="11" class="arrayItem" onclick="pushz(this)">
+                11
+              </button>
+            </div>
+            <div>
+              <button value="12" class="arrayItem" onclick="pushz(this)">
+                12
+              </button>
+            </div>
+            <div>
+              <button value="13" class="arrayItem" onclick="pushz(this)">
+                13
+              </button>
+            </div>
+            <div>
+              <button value="14" class="arrayItem" onclick="pushz(this)">
+                14
+              </button>
+            </div>
+            <div>
+              <button value="15" class="arrayItem" onclick="pushz(this)">
+                15
+              </button>
+            </div>
+            <div>
+              <button value="16" class="arrayItem" onclick="pushz(this)">
+                16
+              </button>
+            </div>
+            <div>
+              <button value="17" class="arrayItem" onclick="pushz(this)">
+                17
+              </button>
+            </div>
+            <div>
+              <button value="18" class="arrayItem" onclick="pushz(this)">
+                18
+              </button>
+            </div>
+            <div>
+              <button value="19" class="arrayItem" onclick="pushz(this)">
+                19
+              </button>
+            </div>
+            <div>
+              <button value="20" class="arrayItem" onclick="pushz(this)">
+                20
+              </button>
+            </div>
+          </div>
+
+          <div class="tenItem">
+            <div>
+              <button value="21" class="arrayItem" onclick="pushz(this)">
+                21
+              </button>
+            </div>
+            <div>
+              <button value="22" class="arrayItem" onclick="pushz(this)">
+                22
+              </button>
+            </div>
+            <div>
+              <button value="23" class="arrayItem" onclick="pushz(this)">
+                23
+              </button>
+            </div>
+            <div>
+              <button value="24" class="arrayItem" onclick="pushz(this)">
+                24
+              </button>
+            </div>
+            <div>
+              <button value="25" class="arrayItem" onclick="pushz(this)">
+                25
+              </button>
+            </div>
+            <div>
+              <button value="26" class="arrayItem" onclick="pushz(this)">
+                26
+              </button>
+            </div>
+            <div>
+              <button value="27" class="arrayItem" onclick="pushz(this)">
+                27
+              </button>
+            </div>
+            <div>
+              <button value="28" class="arrayItem" onclick="pushz(this)">
+                28
+              </button>
+            </div>
+            <div>
+              <button value="29" class="arrayItem" onclick="pushz(this)">
+                29
+              </button>
+            </div>
+            <div>
+              <button value="30" class="arrayItem" onclick="pushz(this)">
+                30
+              </button>
+            </div>
+            <div>
+              <button value="31" class="arrayItem" onclick="pushz(this)">
+                31
+              </button>
+            </div>
+            <div>
+              <button value="32" class="arrayItem" onclick="pushz(this)">
+                32
+              </button>
+            </div>
+            <div>
+              <button value="33" class="arrayItem" onclick="pushz(this)">
+                33
+              </button>
+            </div>
+            <div>
+              <button value="34" class="arrayItem" onclick="pushz(this)">
+                34
+              </button>
+            </div>
+            <div>
+              <button value="35" class="arrayItem" onclick="pushz(this)">
+                35
+              </button>
+            </div>
+            <div>
+              <button value="36" class="arrayItem" onclick="pushz(this)">
+                36
+              </button>
+            </div>
+            <div>
+              <button value="37" class="arrayItem" onclick="pushz(this)">
+                37
+              </button>
+            </div>
+            <div>
+              <button value="38" class="arrayItem" onclick="pushz(this)">
+                38
+              </button>
+            </div>
+            <div>
+              <button value="39" class="arrayItem" onclick="pushz(this)">
+                39
+              </button>
+            </div>
+            <div>
+              <button value="40" class="arrayItem" onclick="pushz(this)">
+                40
+              </button>
+            </div>
+          </div>
+
+          <div class="tenItem">
+            <div>
+              <button value="41" class="arrayItem" onclick="pushz(this)">
+                41
+              </button>
+            </div>
+            <div>
+              <button value="42" class="arrayItem" onclick="pushz(this)">
+                42
+              </button>
+            </div>
+            <div>
+              <button value="43" class="arrayItem" onclick="pushz(this)">
+                43
+              </button>
+            </div>
+            <div>
+              <button value="44" class="arrayItem" onclick="pushz(this)">
+                44
+              </button>
+            </div>
+            <div>
+              <button value="45" class="arrayItem" onclick="pushz(this)">
+                45
+              </button>
+            </div>
+            <div>
+              <button value="46" class="arrayItem" onclick="pushz(this)">
+                46
+              </button>
+            </div>
+            <div>
+              <button value="47" class="arrayItem" onclick="pushz(this)">
+                47
+              </button>
+            </div>
+            <div>
+              <button value="48" class="arrayItem" onclick="pushz(this)">
+                48
+              </button>
+            </div>
+            <div>
+              <button value="49" class="arrayItem" onclick="pushz(this)">
+                49
+              </button>
+            </div>
+            <div>
+              <button value="50" class="arrayItem" onclick="pushz(this)">
+                50
+              </button>
+            </div>
+            <div>
+              <button value="51" class="arrayItem" onclick="pushz(this)">
+                51
+              </button>
+            </div>
+            <div>
+              <button value="52" class="arrayItem" onclick="pushz(this)">
+                52
+              </button>
+            </div>
+            <div>
+              <button value="53" class="arrayItem" onclick="pushz(this)">
+                53
+              </button>
+            </div>
+            <div>
+              <button value="54" class="arrayItem" onclick="pushz(this)">
+                54
+              </button>
+            </div>
+            <div>
+              <button value="55" class="arrayItem" onclick="pushz(this)">
+                55
+              </button>
+            </div>
+            <div>
+              <button value="56" class="arrayItem" onclick="pushz(this)">
+                56
+              </button>
+            </div>
+            <div>
+              <button value="57" class="arrayItem" onclick="pushz(this)">
+                57
+              </button>
+            </div>
+            <div>
+              <button value="58" class="arrayItem" onclick="pushz(this)">
+                58
+              </button>
+            </div>
+            <div>
+              <button value="59" class="arrayItem" onclick="pushz(this)">
+                59
+              </button>
+            </div>
+            <div>
+              <button value="60" class="arrayItem" onclick="pushz(this)">
+                60
+              </button>
+            </div>
+          </div>
+
+          <div class="tenItem">
+            <div>
+              <button value="61" class="arrayItem" onclick="pushz(this)">
+                61
+              </button>
+            </div>
+            <div>
+              <button value="62" class="arrayItem" onclick="pushz(this)">
+                62
+              </button>
+            </div>
+            <div>
+              <button value="63" class="arrayItem" onclick="pushz(this)">
+                63
+              </button>
+            </div>
+            <div>
+              <button value="64" class="arrayItem" onclick="pushz(this)">
+                64
+              </button>
+            </div>
+            <div>
+              <button value="65" class="arrayItem" onclick="pushz(this)">
+                65
+              </button>
+            </div>
+            <div>
+              <button value="66" class="arrayItem" onclick="pushz(this)">
+                66
+              </button>
+            </div>
+            <div>
+              <button value="67" class="arrayItem" onclick="pushz(this)">
+                67
+              </button>
+            </div>
+            <div>
+              <button value="68" class="arrayItem" onclick="pushz(this)">
+                68
+              </button>
+            </div>
+            <div>
+              <button value="69" class="arrayItem" onclick="pushz(this)">
+                69
+              </button>
+            </div>
+            <div>
+              <button value="70" class="arrayItem" onclick="pushz(this)">
+                70
+              </button>
+            </div>
+            <div>
+              <button value="71" class="arrayItem" onclick="pushz(this)">
+                71
+              </button>
+            </div>
+            <div>
+              <button value="72" class="arrayItem" onclick="pushz(this)">
+                72
+              </button>
+            </div>
+            <div>
+              <button value="73" class="arrayItem" onclick="pushz(this)">
+                73
+              </button>
+            </div>
+            <div>
+              <button value="74" class="arrayItem" onclick="pushz(this)">
+                74
+              </button>
+            </div>
+            <div>
+              <button value="75" class="arrayItem" onclick="pushz(this)">
+                75
+              </button>
+            </div>
+            <div>
+              <button value="76" class="arrayItem" onclick="pushz(this)">
+                76
+              </button>
+            </div>
+            <div>
+              <button value="77" class="arrayItem" onclick="pushz(this)">
+                77
+              </button>
+            </div>
+            <div>
+              <button value="78" class="arrayItem" onclick="pushz(this)">
+                78
+              </button>
+            </div>
+            <div>
+              <button value="79" class="arrayItem" onclick="pushz(this)">
+                79
+              </button>
+            </div>
+            <div>
+              <button value="80" class="arrayItem" onclick="pushz(this)">
+                80
+              </button>
+            </div>
+          </div>
+
+          <div class="tenItem">
+            <div>
+              <button value="81" class="arrayItem" onclick="pushz(this)">
+                81
+              </button>
+            </div>
+            <div>
+              <button value="82" class="arrayItem" onclick="pushz(this)">
+                82
+              </button>
+            </div>
+            <div>
+              <button value="83" class="arrayItem" onclick="pushz(this)">
+                83
+              </button>
+            </div>
+            <div>
+              <button value="84" class="arrayItem" onclick="pushz(this)">
+                84
+              </button>
+            </div>
+            <div>
+              <button value="85" class="arrayItem" onclick="pushz(this)">
+                85
+              </button>
+            </div>
+            <div>
+              <button value="86" class="arrayItem" onclick="pushz(this)">
+                86
+              </button>
+            </div>
+            <div>
+              <button value="87" class="arrayItem" onclick="pushz(this)">
+                87
+              </button>
+            </div>
+            <div>
+              <button value="88" class="arrayItem" onclick="pushz(this)">
+                88
+              </button>
+            </div>
+            <div>
+              <button value="89" class="arrayItem" onclick="pushz(this)">
+                89
+              </button>
+            </div>
+            <div>
+              <button value="90" class="arrayItem" onclick="pushz(this)">
+                90
+              </button>
+            </div>
+            <div>
+              <button value="91" class="arrayItem" onclick="pushz(this)">
+                91
+              </button>
+            </div>
+            <div>
+              <button value="92" class="arrayItem" onclick="pushz(this)">
+                92
+              </button>
+            </div>
+            <div>
+              <button value="93" class="arrayItem" onclick="pushz(this)">
+                93
+              </button>
+            </div>
+            <div>
+              <button value="94" class="arrayItem" onclick="pushz(this)">
+                94
+              </button>
+            </div>
+            <div>
+              <button value="95" class="arrayItem" onclick="pushz(this)">
+                95
+              </button>
+            </div>
+            <div>
+              <button value="96" class="arrayItem" onclick="pushz(this)">
+                96
+              </button>
+            </div>
+            <div>
+              <button value="97" class="arrayItem" onclick="pushz(this)">
+                97
+              </button>
+            </div>
+            <div>
+              <button value="98" class="arrayItem" onclick="pushz(this)">
+                98
+              </button>
+            </div>
+            <div>
+              <button value="99" class="arrayItem" onclick="pushz(this)">
+                99
+              </button>
+            </div>
+            <div>
+              <button
+                style="background-color: rgba(255, 115, 0, 0.786)"
+                value="00"
+                class="arrayItem"
+                onclick="pushz(this)"
+              >
+                00
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footerContent">
+          Copyright 2023 &copy; All Right Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </body>
+
+  <script>
+    var typed = new Typed("#navLogo", {
+      strings: [" Welcome in the Game ", "GUESS THE HIDDEN NUMBER"],
+      typeSpeed: 100,
+    });
+  </script>
+</html>
