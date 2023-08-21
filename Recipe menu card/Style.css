@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  /* height: 100%; */
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #132832 100%);
+}
+
+.homeButton{
+  align-items: center;
+  margin-top: 12px ;
+  fill: white;
+  color: white;
+}
+.navBar {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    min-height: 40px;
+  }
+  #navLogo {
+  font-family: cursive;
+  word-spacing: 10px;
+  padding-left: 295px;
+  font-size: 2rem;
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.navMenu ul {
+  list-style-type: none;
+  font-family: "Noto Sans", sans-serif;
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.navMenu ul a {
+  font-weight: bold;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.footerContainer {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  min-height: 35px;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.footerContent {
+  padding-top: 8px;
+  font-size: smaller;
+}
+.mainContainer {
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+    ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e1e9ee 100%);
+  width: 50vw;
+  margin: auto;
+  /* height: 1200px; */
+  position: relative;
+  padding: 20px;
+  padding-right: 25px;
+  box-shadow: 0px 0px 20px 0px #888888;
+  /* box-shadow: 3px  3px 15px rgb(67, 69, 67); */
+}
+.horizontalRow {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Noto Sans", sans-serif;
+
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  display: flex;
+  /* box-shadow: 2px 3px 5px rgb(67, 69, 67); */
+  border-radius: 20px;
+  margin: auto;
+  width: 95%;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.horizontalRow img {
+  width: 170px;
+  height: 170px;
+  border-radius: 20px;
+}
+
+.item {
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(173, 29, 29);
+}
+
+.ingrident {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.price {
+  margin-top: 15px;
+  font-weight: bolder;
+}

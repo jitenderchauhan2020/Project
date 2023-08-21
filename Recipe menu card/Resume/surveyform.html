@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Survey form</title>
+    <style>
+      .main {
+        border-radius: 30px;
+        padding: 30px;
+        background-color: rgb(230, 226, 219);
+        box-shadow: 5px 5px 2px black;
+      }
+      .div1 input {
+        margin: 10px;
+        padding: 10px;
+      }
+      .div1 {
+        text-align: left;
+        border-radius: 20px;
+        margin: 20px;
+        border: double black 1px;
+        padding: 20px;
+        background-color: rgb(183, 204, 200);
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <fieldset>
+          <legend style="color: rgb(0, 0, 0)">STUDENTS SURVEY FORM</legend>
+          <div class="div1">
+            <h1>NAME :</h1>
+            <input
+              size="100%"
+              autofocus
+              placeholder="Enter your Name"
+              type="text"
+              name="name"
+              value=""
+            /><br /><br />
+            <h1>ADDRESS :</h1>
+            <textarea
+              style="padding: 10px"
+              aria-setsize="100%"
+              name="address"
+              id=""
+              cols="00"
+              rows="00"
+            ></textarea
+            ><br /><br />
+            <h1>EMAIL :</h1>
+            <input
+              size="100%"
+              placeholder="eg example@email.com"
+              type="email"
+              value=""
+            /><br /><br />
+            <h1>PHONE :</h1>
+            <input
+              size="100%"
+              type="number"
+              name="PHONE"
+              value=""
+            /><br /><br />
+          </div>
+          <div class="div1">
+            <h1>GENDER</h1>
+            : <input type="radio" name="gender" value="M" />Male
+            <input type="radio" name="gender" value="F" />female <br /><br />
+            <h1>DOB</h1>
+            : <input type="date" value="date" />
+          </div>
+          <div class="div1">
+            <h1>STATE</h1>
+            :
+            <select style="padding: 10px" name="state" id="states">
+              <option value="NONE">SELECT</option>
+              <option value="DELHI">DELHI</option>
+              <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+              <option value="HARYANA">HARYANA</option>
+              <option value="BIHAR">BIHAR</option></select
+            ><br /><br />
+          </div>
+          <div class="div1">
+            <h1></h1>
+            : <br />
+            <input type="checkbox" style="margin-bottom: 10px" name="ml" />
+            MACHINE LEARNING <br />
+            <input type="checkbox" style="margin-bottom: 10px" name="ai" />
+            ARTIFICIAL INTELLIGENCE <br />
+            <input type="checkbox" style="margin-bottom: 10px" name="ds" /> DATA
+            SCIENCE <br />
+            <input type="checkbox" style="margin-bottom: 10px" name="iot" />
+            INTERNET OF THINGS <br />
+            <input type="checkbox" style="margin-bottom: 10px" name="CS" />
+            COMPUTER SCIENCE <br />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
