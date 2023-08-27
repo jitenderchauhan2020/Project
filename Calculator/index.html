@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Handjet&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1
+        style="
+          text-align: center;
+          font-size: 2em;
+          margin: 10px 0;
+          color: rgb(51, 51, 255);
+        "
+      >
+      D:\WIZARD\Project\calculator
+      Calculator
+      </h1>
+      <div class="body">
+        <input class="screen" type="text" id="result" disabled>
+
+        <div class="buttons">
+          <div class="row">
+            <button onclick="clearResult()" id="cancel" class="item ">C</button>
+            <button onclick="getItem('0')" value="0" class="item">0</button>
+            <button onclick="getItem( '/')" value="/" class="item arithmatic" >/</button>
+            <button onclick="getItem('+')" value="+"class="item arithmatic">+</button>
+            
+          </div>
+          <div class="row">
+            <button onclick="getItem('1')" value="1" class="item">1</button>
+            <button onclick="getItem('2')" value="2" class="item">2</button>
+            <button onclick="getItem('3')" value="3" class="item">3</button>
+            <button onclick="getItem('-')" value="-" class="item arithmatic">-</button>
+          </div>
+          <div class="row">
+            <button onclick="getItem('4')" value="4" class="item">4</button>
+            <button onclick="getItem('5')" value="5" class="item">5</button>
+            <button onclick="getItem('6')" value="6" class="item">6</button>
+            <button onclick="getItem('*')" value="*" class="item arithmatic">*</button>
+          </div>
+          <div class="row">
+            <button onclick="getItem('7')" value="7" class="item">7</button>
+            <button onclick="getItem('8')" value="8" class="item">8</button>
+            <button onclick="getItem('9')" value="9" class="item">9</button>
+            <button 
+            onclick="calculateResult()"
+              class="item"
+              style="background-color: rgb(219, 148, 17); "id="equal"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+<script>
+  function getItem(value) {
+    document.getElementById("result").value += value;
+  }
+
+  function clearResult() {
+    document.getElementById("result").value = "";
+  }
+
+  function calculateResult() {
+    try {
+      const result = eval(document.getElementById("result").value);
+      document.getElementById("result").value = result;
+    } catch (error) {
+      document.getElementById("result").value = "Error";
+    }
+  }
+</script>
+</html>

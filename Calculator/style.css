@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+:root{
+  --digital:font-family: 'Handjet', cursive;
+}
+
+.draft {
+  background-color: aqua;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.body {
+  background-color: rgb(0, 0, 0);
+  height: 35vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 20px;
+  width: 25vw;
+  gap: 20px;
+}
+.screen {
+  /* font-family: var(--digital); */
+  @font-face{
+    font-family:'digital-clock-font';
+    src: url('put_the_location_to_your_font.ttf or .otf');
+   }
+  height: 25%;
+   
+  /* position: relative; */
+  font-size: 2.5em;
+}
+.buttons {
+  box-shadow: 2px 2px 12px black;
+  /* background-color: rgb(215, 215, 215); */
+  border-radius:20px;
+  background-color: rgb(18, 18, 18);
+  height: 75%;
+}
+.row{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25%;
+}
+.item{
+  height: 80%;
+  box-shadow: 2px 2px 12px rgb(30, 28, 28);
+  width: 20%;
+  font-size: 1.7em;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  color: rgb(85, 244, 41);
+  background-color: rgb(18, 18, 18);
+  cursor: pointer;
+}
+.item:hover{
+  font-size: 1.5em;
+}
+
+.arithmatic{
+  color: white;
+}
